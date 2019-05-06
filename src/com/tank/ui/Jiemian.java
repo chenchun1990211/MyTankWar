@@ -197,7 +197,7 @@ public class Jiemian extends JFrame {
 	@Override
 	public void paint(Graphics g) {
 		// TODO Auto-generated method stub
-		
+		super.paint(g);
 		Container cp = getContentPane();
 		cp.validate();
 		Graphics g2 = cp.getGraphics();
