@@ -48,19 +48,21 @@ public class Tank {
 		}
 		
 		//¼ì²é±ß½ç
-//		if(pointX <0) {
-//			pointX = 0;
-//		}
-//		if(pointY <0) {
-//			pointX = 0;
-//		}
-//		
-//		if(pointX >=(maxX-imgX)) {
-//			pointX = maxX-imgX ;
-//		}
-//		if(pointX >=(maxY-imgY)) {
-//			pointX = maxY-imgY;
-//		}
+		if(pointX <0) {
+			pointX = 0;
+		}
+		if(pointY <0) {
+			pointY = 0;
+		}
+		
+		if(pointX >=(maxX-imgX)) {
+			pointX = maxX-imgX ;
+		}
+		if(pointY >=(maxY-imgY)) {
+			pointY = maxY-imgY;
+		}
+		
+		System.out.println("pointX"+pointX+"pointY"+pointY+"---"+maxX+"--"+maxY);
 		setDirection(direction);
 	}
 
